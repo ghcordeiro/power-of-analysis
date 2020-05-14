@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Power of analysis</string>
+    <string name="lbl_ativo">Ativo</string>
+    <string name="label">Teste</string>
+    <string name="ativo">Ativo</string>
+    <string name="lucro_liqido">Lucro Líqido</string>
+    <string name="patrimonio_liqido">Patrimônio Líqido</string>
+    <string name="numero_acoes">Número de ações na bolsa</string>
+    <string name="preco_atual">Preço atual</string>
+    <string name="calcular_indicadores">Calcular Indicadores</string>
+    <string name="tela_2">Tela 2</string>
+    <string name="acao">TextView</string>
+    <string name="lpa">Lucro por ação (LPA)</string>
+    <string name="action">Ação</string>
+    <string name="pl">Preço Lucro (PL)</string>
+    <string name="todo">TODO</string>
+    <string name="roe">Retorno sobre o Patrimônio Líquido (ROE)</string>
+    <string name="vpa">Valor Patrimonial por ação (VPA)</string>
+    <string name="pv">Preço sobre o Valor Patrimonial (PV)</string>
+</resources>

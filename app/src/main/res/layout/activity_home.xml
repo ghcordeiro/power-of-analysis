@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/lblAtivo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/ativo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblLucroLiquido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/lucro_liqido"
+        app:layout_constraintEnd_toEndOf="@+id/editAtivo"
+        app:layout_constraintStart_toStartOf="@+id/editAtivo"
+        app:layout_constraintTop_toBottomOf="@+id/editAtivo" />
+
+    <EditText
+        android:id="@+id/editLucroLiquido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/lblLucroLiquido"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblLucroLiquido"
+        app:layout_constraintTop_toBottomOf="@+id/lblLucroLiquido" />
+
+    <TextView
+        android:id="@+id/lblPatrimonioLiquido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/patrimonio_liqido"
+        app:layout_constraintEnd_toEndOf="@+id/editLucroLiquido"
+        app:layout_constraintStart_toStartOf="@+id/editLucroLiquido"
+        app:layout_constraintTop_toBottomOf="@+id/editLucroLiquido" />
+
+    <EditText
+        android:id="@+id/editPatrimonioLiquido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/lblPatrimonioLiquido"
+        app:layout_constraintStart_toStartOf="@+id/lblPatrimonioLiquido"
+        app:layout_constraintTop_toBottomOf="@+id/lblPatrimonioLiquido"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/lblNumeroAcoes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/numero_acoes"
+        app:layout_constraintEnd_toEndOf="@+id/editPatrimonioLiquido"
+        app:layout_constraintStart_toStartOf="@+id/editPatrimonioLiquido"
+        app:layout_constraintTop_toBottomOf="@+id/editPatrimonioLiquido" />
+
+    <EditText
+        android:id="@+id/editNumeroAcoes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/lblNumeroAcoes"
+        app:layout_constraintStart_toStartOf="@+id/lblNumeroAcoes"
+        app:layout_constraintTop_toBottomOf="@+id/lblNumeroAcoes" />
+
+    <TextView
+        android:id="@+id/lblPrecoAtual"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/preco_atual"
+        app:layout_constraintEnd_toEndOf="@+id/editNumeroAcoes"
+        app:layout_constraintStart_toStartOf="@+id/editNumeroAcoes"
+        app:layout_constraintTop_toBottomOf="@+id/editNumeroAcoes" />
+
+    <EditText
+        android:id="@+id/editPrecoAtual"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/lblPrecoAtual"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblPrecoAtual"
+        app:layout_constraintTop_toBottomOf="@+id/lblPrecoAtual" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#7159C1"
+        android:onClick="btnMessageOnClick"
+        android:text="@string/calcular_indicadores"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/editPrecoAtual"
+        app:layout_constraintStart_toStartOf="@+id/editPrecoAtual"
+        app:layout_constraintTop_toBottomOf="@+id/editPrecoAtual"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/editAtivo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/lblAtivo"
+        app:layout_constraintStart_toStartOf="@+id/lblAtivo"
+        app:layout_constraintTop_toBottomOf="@+id/lblAtivo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
